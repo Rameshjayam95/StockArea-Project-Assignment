@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body style="background-color:rgba(46, 34, 34, 0.212);">
+    
+  
+<head>
+    <title>Stock Area</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+  </head>
+  
+  
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header" >
+            <a class="navbar-brand" href="#">
+                    <img src="icon10.png" alt="logo" style="width:25px;">
+                  </a>
+        <a class="navbar-brand" href="#">Travel Bag Free</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+            <li><a href="HowIt.html">How it works</a></li>
+            <li><a href="Price.html">Pricing</a></li>
+            <li><a href="Faq.html">FAQ</a></li>
+        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+<style>
+.pricingTable{
+    background: #004D58;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
+.pricingTable .pricingTable-header{
+    color: #fff;
+    background: #c90a39;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
+    padding: 90px 0 30px;
+    border-bottom: 7px solid rgba(0,0,0,0.2);
+}
+.pricingTable .title{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 7px;
+}
+.pricingTable .price-value{ transition: all 0.3s ease 0s; }
+.pricingTable:hover .price-value{ transform: rotateY(360deg); }
+.pricingTable .currency{
+    font-size: 30px;
+    vertical-align: top;
+    margin-top: 8px;
+    display: inline-block;
+}
+.pricingTable .amount{
+    font-size: 50px;
+    font-weight: 700;
+}
+.pricingTable .month{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 10px;
+    text-transform: uppercase;
+    display: block;
+}
+.pricingTable .pricing-content{
+    background: #dbdbdb;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.pricingTable .pricing-content li{
+    color: #777;
+    font-size: 17px;
+    line-height: 60px;
+}
+.pricingTable .pricing-content li:nth-child(even){ background: #e7e7e7; }
+.pricingTable .pricingTable-signup{
+    padding: 30px 0 50px;
+    border-top: 5px solid rgba(0,0,0,0.3);
+}
+.pricingTable .pricingTable-signup a{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+}
+.pricingTable:hover .pricingTable-signup a{ text-shadow: 2px 4px 3px rgba(0,0,0,0.5); }
+.pricingTable:hover .pricingTable-signup a:hover{ letter-spacing: 3px; }
+.pricingTable.green .pricingTable-header{ background: #6da000; }
+.pricingTable.blue .pricingTable-header{ background: #3867d6; }
+@media only screen and (max-width: 990px){
+    .pricingTable{ margin: 0 0 30px; }
+</style>
+<body>
+<div class="demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="pricingTable">
+                    <div class="pricingTable-header">
+                        <h3 class="title">Standard</h3>
+                        <div class="price-value">
+                            <span class="currency">$</span>
+                            <span class="amount">9.99</span>
+                            <span class="month"></span>
+                        </div>
+                    </div>
+                    <ul class="pricing-content">
+                        <li>Travel Bag</li>
+                        <li>Small</li>
+                        <li>One Way</li>
+                       
+                    </ul>
+                    <div class="pricingTable-signup">
+                        <a href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="pricingTable green">
+                    <div class="pricingTable-header">
+                        <h3 class="title">Business</h3>
+                        <div class="price-value">
+                            <span class="currency">$</span>
+                            <span class="amount">19.99</span>
+                            <span class="month">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-content">
+                        <li>Travel Bag</li>
+                        <li>Large</li>
+                        <li>Two Way</li>
+                        
+                    </ul>
+                    <div class="pricingTable-signup">
+                        <a href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
